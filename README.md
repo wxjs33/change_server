@@ -22,6 +22,13 @@ Nginx module which change server name in one request
 	}
 
 
+## Directives
+
+Syntax: **change_server**
+
+Default: none
+
+Context: location, if location
 
 It can be used in location and if location.
 
