@@ -14,9 +14,9 @@ Context: `location, if location`
 
 Description: 
 	
-	If it is set 'change_server', request will be redirect to new_server_name in conf.
-	
-	If new_server_name is not found, it will be processed in default server name.
+If it is set 'change_server', request will be redirect to new_server_name in conf.
+
+If new_server_name is not found, it will be processed in default server name.
 
 
 ###Example
