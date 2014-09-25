@@ -3,6 +3,22 @@ change_server
 
 Nginx module which change server name in one request
 
+
+## Directives
+
+Syntax: **change_server**
+
+Default: `none`
+
+Context: `location, if location`
+
+Description: 
+`It can be used in location and if location.
+
+If it is set 'change_server', request will be redirect to new_server_name in conf.
+If new_server_name is not found, it will be processed in default server name.
+`
+
 ###Example
 
 	server {
@@ -20,20 +36,4 @@ Nginx module which change server name in one request
 			#do anything ...
 		}
 	}
-
-
-## Directives
-
-Syntax: **change_server**
-
-Default: `none`
-
-Context: `location, if location`
-
-## Description
-
-It can be used in location and if location.
-
-If it is set 'change_server', request will be redirect to new_server_name in conf.
-If new_server_name is not found, it will be processed in default server name.
 
