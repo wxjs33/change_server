@@ -3,23 +3,23 @@ change_server
 
 Nginx module which change server name in one request
 
-[Example]
+###Example
 
-server {
-	listen       80;
-	server_name  localhost;
-	location / {
-		change_server new;
+	server {
+		listen       80;
+		server_name  localhost;
+		location / {
+			change_server new;
+		}
 	}
-}
-
-server {
-	listen       80;
-	server_name  new;
-	location / {
-		#do anything ...
+	
+	server {
+		listen       80;
+		server_name  new;
+		location / {
+			#do anything ...
+		}
 	}
-}
 
 
 
